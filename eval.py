@@ -30,7 +30,7 @@ for attr, value in sorted(FLAGS.__flags.items()):
 print("")
 
 
-x_raw = ["Two people and then you can't believe what happened"]
+x_raw = ["Dell to acquire IBM, Apple and AT&T for $80 billion"]
 
 
 # Map data into vocabulary
