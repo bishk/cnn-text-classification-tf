@@ -30,9 +30,9 @@ for attr, value in sorted(FLAGS.__flags.items()):
 print("")
 
 
-x_raw = ["Dell to acquire IBM, Apple and AT&T for $80 billion"]
+x_raw = ["Accenture looks to Israel to boost cybersecurity portfolio"]
 
-
+print x_raw
 # Map data into vocabulary
 vocab_path = os.path.join(FLAGS.checkpoint_dir, "..", "vocab")
 vocab_processor = learn.preprocessing.VocabularyProcessor.restore(vocab_path)
@@ -73,7 +73,7 @@ with graph.as_default():
             all_predictions = np.concatenate([all_predictions, batch_predictions])
 
         if(all_predictions[0]==1):
-            print "legit bro"
+            print "L"
         else:
-            print "clickbait bro"
+            print "C"
         
